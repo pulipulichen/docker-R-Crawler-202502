@@ -9,5 +9,7 @@ services:
     #You can keep the container running.
     tty: true
     #Mount the files in the directory to the app directory in the container
+    command: ["Rscript", "/app/main.r"]
     volumes: 
       - ./app:/app/
+      - ./data:/data
