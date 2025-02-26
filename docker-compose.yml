@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  app:
+    #Build a Dockerfile in the same directory
+    build: .
+    #Give the container a name(Any)
+    #container_name: 
+    #You can keep the container running.
+    tty: true
+    #Mount the files in the directory to the app directory in the container
+    volumes: 
+      - ./app:/app/
